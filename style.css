@@ -162,3 +162,57 @@ hr {
   line-height: 20px;
   color: #ff4a60;
 }
+
+/* -----------------------
+      Responcive desigen
+----------------------- */
+
+/* --------------------------
+        For small devices -
+------------------------------*/
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 0;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .players_container {
+    padding-left: 5%;
+  }
+
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player-name {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-info {
+    text-align: center;
+  }
+  .blog-title {
+    font-size: 16px;
+  }
+
+  .course-container {
+    margin: 10% auto;
+    padding-top: 5%;
+  }
+
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
