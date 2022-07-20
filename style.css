@@ -168,7 +168,7 @@ hr {
 ----------------------- */
 
 /* --------------------------
-        For small devices -
+        For X-small devices -
 ------------------------------*/
 @media only screen and (max-width: 576px) {
   .container {
@@ -214,5 +214,107 @@ hr {
   .courses {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
+  }
+}
+
+/* --------------------------
+        For Small devices -
+------------------------------*/
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 5% 0;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .players_container {
+    padding-left: 10%;
+  }
+
+  .players {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .player-name {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-info {
+    text-align: center;
+  }
+  .blog-title {
+    font-size: 16px;
+  }
+
+  .course-container {
+    margin: 5% auto;
+    padding: 5% 0;
+  }
+
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 50px;
+  }
+}
+
+/* --------------------------
+        For Medium devices -
+------------------------------*/
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 5% 0;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .players_container {
+    padding-left: 10%;
+  }
+
+  .players {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .player-name {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-info {
+    text-align: center;
+  }
+  .blog-title {
+    font-size: 16px;
+  }
+
+  .course-container {
+    margin: 5% auto;
+    padding: 5% 0;
+  }
+
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 50px;
   }
 }
